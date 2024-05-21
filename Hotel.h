@@ -1,5 +1,6 @@
 #include <string.h>
-#include "Provincia.h"
+
+#include "Ciudad.h"
 
 class Hotel
 {
@@ -7,10 +8,10 @@ private:
 	int id;
 	char* nombre;
 	int estrellas;
-	Provincia* provincia;
+	Ciudad* ciudad;
 public:
 	Hotel();
-	Hotel(int, const char*, int, Provincia*);
+	Hotel(int, const char*, int, Ciudad*);
 	Hotel(const Hotel &other);
 	virtual ~Hotel();
 	int getId();
@@ -19,8 +20,8 @@ public:
 	void setNombre(const char* nombre);
 	int getEstrellas();
 	void setEstrellas(int estrellas);
-	Provincia getProvincia();
-	void setProvincia(Provincia* provincia);
+	Ciudad getCiudad();
+	void setCiudad(Ciudad* ciudad);
 };
 
 #endif /* CLASES_HOTEL_H_ */

@@ -7,15 +7,15 @@ Hotel::Hotel() {
 	id = 0;
 	nombre = 0;
 	estrellas = 0;
-	provincia = 0;
+	ciudad = 0;
 }
 
-Hotel::Hotel(int id, const char* nombre, int estrellas, Provincia* provincia) {
+Hotel::Hotel(int id, const char* nombre, int estrellas, Ciudad* ciudad) {
 	this->id = id;
 	this->nombre = new char[strlen(nombre + 1)];
 	strcpy(this->nombre, nombre);
 	this->estrellas = estrellas;
-	this->provincia = provincia;
+	this->ciudad = ciudad;
 }
 
 Hotel::Hotel(const Hotel &h) {
@@ -23,7 +23,7 @@ Hotel::Hotel(const Hotel &h) {
 	this->nombre = new char[strlen(h.nombre + 1)];
 	strcpy(this->nombre, h.nombre);
 	this->estrellas = estrellas;
-	this->provincia = h.provincia;
+	this->ciudad = h.ciudad;
 }
 
 Hotel::~Hotel() {
@@ -56,10 +56,10 @@ void Hotel::setEstrellas(int estrellas) {
 	this->estrellas = estrellas;
 }
 
-Provincia Hotel::getProvincia() {
-	return *provincia;
+Ciudad Hotel::getCiudad() {
+	return *ciudad;
 }
 
-void Hotel::setProvincia(Provincia *provincia) {
-	this->provincia = provincia;
+void Hotel::setCiudad(Ciudad *ciudad) {
+	this->ciudad = ciudad;
 }
