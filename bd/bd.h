@@ -1,10 +1,3 @@
-/*
- * bd.h
- *
- *  Created on: 21 may 2024
- *      Author: mario
- */
-
 #ifndef BD_H_
 #define BD_H_
 
