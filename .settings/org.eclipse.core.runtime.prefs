@@ -1,0 +1,4 @@
+content-types/enabled=true
+content-types/org.eclipse.cdt.core.cxxHeader/file-names=k
+content-types/org.eclipse.cdt.core.cxxSource/file-names=k
+eclipse.preferences.version=1
